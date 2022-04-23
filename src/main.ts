@@ -1,5 +1,6 @@
 import { App, Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
+import { PortfolioStack } from './lib/portfolio-stack';
 
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {
@@ -17,7 +18,7 @@ const devEnv = {
 
 const app = new App();
 
-new MyStack(app, 'cdk-sc-network-product-dev', { env: devEnv });
-// new MyStack(app, 'cdk-sc-network-product-prod', { env: prodEnv });
+new PortfolioStack(app, 'cdk-sc-network-product', { env: devEnv });
+new MyStack(app, 'mystack', { env: devEnv });
 
 app.synth();

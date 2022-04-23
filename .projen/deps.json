@@ -21,7 +21,7 @@
     },
     {
       "name": "aws-cdk",
-      "version": "^2.1.0",
+      "version": "^2.20.0",
       "type": "build"
     },
     {
@@ -81,13 +81,29 @@
       "type": "build"
     },
     {
+      "name": "@aws-cdk/aws-servicecatalog-alpha",
+      "type": "runtime"
+    },
+    {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.20.0",
+      "type": "runtime"
+    },
+    {
+      "name": "chalk",
       "type": "runtime"
     },
     {
       "name": "constructs",
       "version": "^10.0.5",
+      "type": "runtime"
+    },
+    {
+      "name": "fs",
+      "type": "runtime"
+    },
+    {
+      "name": "yaml",
       "type": "runtime"
     }
   ],

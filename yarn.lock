@@ -9,6 +9,11 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
+"@aws-cdk/aws-servicecatalog-alpha@^2.21.0-alpha.0":
+  version "2.21.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-servicecatalog-alpha/-/aws-servicecatalog-alpha-2.21.0-alpha.0.tgz#b97838abd1b3c0e50a8e4f62ba2aca2b153783ae"
+  integrity sha512-yiS7o/nzjxXMCQJSbdgpPzuCvCPcyXn5XD+B6WnTmlFL0lNAGBTeNPvDDYkXqZGg2KNxzFYDfge94cJmv3CRbA==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -1052,7 +1057,7 @@ at-least-node@^1.0.0:
   resolved "https://registry.yarnpkg.com/at-least-node/-/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==
 
-aws-cdk-lib@^2.1.0:
+aws-cdk-lib@^2.20.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.20.0.tgz#bb22702cc3748d8ed7eb42646f473ff740311bfe"
   integrity sha512-jACK/1UJxtWWl6QH+I1V8Oc8F1EEL6aFQYk24DIrzNyB1Aj9LIs9/NyDu5zN00QFKrR6aDE7WAv1VG3sa6wWdg==
@@ -1067,7 +1072,7 @@ aws-cdk-lib@^2.1.0:
     semver "^7.3.5"
     yaml "1.10.2"
 
-aws-cdk@^2.1.0:
+aws-cdk@^2.20.0:
   version "2.20.0"
   resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.20.0.tgz#e3b00ecd1589777bebd1d003e32479cbfad735e1"
   integrity sha512-rs9LTpvrlbsMcenZ3t7TuLDGbHhbnDocrE63Xb2PT++VptR/A8svllK8k1W7hPl77L9QS75GNK5gh+ShkEzsnw==
@@ -1287,6 +1292,11 @@ case@1.6.3, case@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
+
+chalk@*:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.0.1.tgz#ca57d71e82bb534a296df63bbacc4a1c22b2a4b6"
+  integrity sha512-Fo07WOYGqMfCWHOzSXOt2CxDbC6skS/jO9ynEcmpANMoPrD+W1r1K6Vx7iNm+AQmETU1Xr2t+n8nzkV9t6xh3w==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -2230,6 +2240,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+fs@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.2.tgz#e1f244ef3933c1b2a64bd4799136060d0f5914f8"
+  integrity sha1-4fJE7zkzwbKmS9R5kTYGDQ9ZFPg=
 
 fsevents@2.3.2, fsevents@^2.3.2:
   version "2.3.2"
@@ -5148,6 +5163,11 @@ yaml@2.0.0-11:
   version "2.0.0-11"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.0.0-11.tgz#269af42637a41ec1ebf2abb546a28949545f0cbb"
   integrity sha512-5kGSQrzDyjCk0BLuFfjkoUE9vYcoyrwZIZ+GnpOSM9vhkvPjItYiWJ1jpRSo0aU4QmsoNrFwDT4O7XS2UGcBQg==
+
+yaml@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.0.1.tgz#71886d6021f3da28169dbefde78d4dd0f8d83650"
+  integrity sha512-1NpAYQ3wjzIlMs0mgdBmYzLkFgWBIWrzYVDYfrixhoFNNgJ444/jT2kUT2sicRbJES3oQYRZugjB6Ro8SjKeFg==
 
 yargs-parser@20.x, yargs-parser@^20.2.2:
   version "20.2.9"
