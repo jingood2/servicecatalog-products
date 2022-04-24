@@ -3,6 +3,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import { Construct } from 'constructs/lib/construct';
 import { envVars } from '../env-vars';
+import { ProductAlbStack } from './products/network/elb/alb/alb-with-wafv2';
 import { R53OutboundResolverRuleProduct } from './products/network/route53/route53-outbound-resolver-rule';
 import { Route53ResolverProduct } from './products/network/route53/route53-resolver';
 
@@ -81,6 +82,22 @@ export class PortfolioStack extends cdk.Stack {
     });
 
     this.portfolio.addProduct(product2);
+
+    const product3 = new servicecatalog.CloudFormationProduct(this, 'ALBWithWafV2Product', {
+      productName: 'alb-with-wafv2-product',
+      owner: 'AWSTF',
+      description: 'ALB With WAFV2 Product',
+      productVersions: [
+        {
+          productVersionName: 'v1',
+          cloudFormationTemplate: servicecatalog.CloudFormationTemplate.fromProductStack(new ProductAlbStack(this, 'AlbWithWafV2', {
+            env: devEnv,
+          })),
+        },
+      ],
+    });
+
+    this.portfolio.addProduct(product3);
 
   }
 }
