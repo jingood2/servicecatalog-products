@@ -19,6 +19,6 @@ const devEnv = {
 const app = new App();
 
 new PortfolioStack(app, 'cdk-sc-network-product', { env: devEnv });
-new MyStack(app, 'mystack', { env: devEnv });
+//new MyStack(app, 'mystack', { env: devEnv });
 
 app.synth();

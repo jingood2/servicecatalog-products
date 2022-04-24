@@ -21,7 +21,7 @@ export class PortfolioStack extends cdk.Stack {
       this.portfolio = new servicecatalog.Portfolio(this, envVars.SC_PORTFOLIO_NAME, {
         displayName: envVars.SC_PORTFOLIO_NAME ?? 'DemoPortfolio',
         providerName: 'Cloud Infra TF',
-        description: 'CDK Network Reference Architecture',
+        description: 'CDK Reference Architecture',
         messageLanguage: servicecatalog.MessageLanguage.EN,
       });
 
